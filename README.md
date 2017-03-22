@@ -41,3 +41,9 @@ versionFile{
     desFile = 'manifest'
 }
 ```
+
+
+### release log
+#### v 1.0.3 
+refactor Judgment logic .
+fix release can't handle versionCode with productFlavors.
