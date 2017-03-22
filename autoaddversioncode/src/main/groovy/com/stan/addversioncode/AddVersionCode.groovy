@@ -10,7 +10,7 @@ public class AddVersionCode implements Plugin<Project> {
         project.task("startAddGradle", type: AddGradle)
         project.task("startAddManifest", type: AddManifest)
         project.tasks.whenTaskAdded { task ->
-            if (task.name == "generateReleaseBuildConfig") {
+            if (task.name.contains('ReleaseBuildConfig')) {
                 if (project.versionFile==null || project.versionFile.desFile==null || project.versionFile.desFile == "gradle") {
                     task.dependsOn 'startAddGradle'//需要依赖实例
                 } else if (project.versionFile.desFile == "manifest") {
