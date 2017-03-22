@@ -14,7 +14,7 @@ buildscript{
         maven { url 'https://jitpack.io' }
     }
     dependencies{
-        classpath 'com.github.stanhe:AutoAddVersionCode:1.0.2'
+        classpath 'com.github.stanhe:AutoAddVersionCode:1.0.3'
     }
 }
 ```
