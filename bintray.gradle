@@ -46,7 +46,12 @@ install {
 task sourcesJar(type: Jar) {
     from 'src/main/groovy'
     exclude 'META-INF'
-    classifier = 'sources'
+    classifier = 'sources' //classifier add the suffix to the file. autoaddversioncode-1.0.3-sources.jar
+}
+
+task versionJar(type: Jar) {
+    from 'src/main/groovy'
+    exclude 'META-INF'
 }
 
 groovydoc {
@@ -55,13 +60,14 @@ groovydoc {
 }
 
 task groovydocJar(type: Jar, dependsOn: groovydoc) {
-    classifier = 'javadoc'
     from groovydoc.destinationDir
+    classifier = 'javadoc'
 }
 
 artifacts {
-    archives groovydocJar
     archives sourcesJar
+    archives versionJar
+    archives groovydocJar
 }
 
 Properties properties = new Properties()
