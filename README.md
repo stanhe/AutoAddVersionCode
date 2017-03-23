@@ -6,9 +6,9 @@
 The first way to use it with jitpack.
 ```
 apply plugin: 'com.android.application'
-apply plugin: 'addversioncode'
 
 //add this at top of your app's build.gradle.
+apply plugin: 'addversioncode'
 buildscript{
     repositories{
         maven { url 'https://jitpack.io' }
@@ -16,6 +16,12 @@ buildscript{
     dependencies{
         classpath 'com.github.stanhe:AutoAddVersionCode:1.0.3'
     }
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    ......
 }
 ```
 when you use the default settings,this plugin will add versionCode in build.grale only when release.so there are some optional filds to benefit your.
@@ -25,9 +31,9 @@ when you use the default settings,this plugin will add versionCode in build.gral
 
 ```
 apply plugin: 'com.android.application'
-apply plugin: 'addversioncode'
 
 //add this at top of your app's build.gradle.
+apply plugin: 'addversioncode'
 buildscript{
     repositories{
         maven { url 'https://jitpack.io' }
@@ -39,6 +45,12 @@ buildscript{
 //optional Fild
 versionFile{
     desFile = 'manifest'
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    ......
 }
 ```
 
