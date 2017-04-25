@@ -3,7 +3,6 @@
 #### This a gradle plugin for auto add versionCode when release.
 
 ### How to use
-The first way to use it with jitpack.
 ```
 apply plugin: 'com.android.application'
 
