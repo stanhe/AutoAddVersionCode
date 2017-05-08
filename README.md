@@ -23,6 +23,7 @@ android {
     ......
 }
 ```
+### Optional fields
 when you use the default settings,this plugin will add versionCode in build.grale only when release.so there are some optional filds to benefit your.
 * 'gradle' or (default no) --- this will only add versionCode in build.gradle when release.
 * 'manifest'  --- this will only add versionCode in manifest.xml when release.
@@ -56,5 +57,5 @@ android {
 
 ### release log
 #### v 1.0.3 
-refactor Judgment logic .
+Refactor Judgment logic .
 fix release can't handle versionCode with productFlavors.
