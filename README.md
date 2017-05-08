@@ -3,7 +3,7 @@
 #### This a gradle plugin for auto add versionCode when release.
 
 ### How to use
-```
+```java
 apply plugin: 'com.android.application'
 
 //add this at top of your app's build.gradle.
@@ -28,7 +28,7 @@ when you use the default settings,this plugin will add versionCode in build.gral
 * 'manifest'  --- this will only add versionCode in manifest.xml when release.
 * 'all' --- add versionCode in buid.gradle and manifest.xml when release.
 
-```
+```java
 apply plugin: 'com.android.application'
 
 //add this at top of your app's build.gradle.
