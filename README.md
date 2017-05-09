@@ -24,7 +24,10 @@ android {
 }
 ```
 ### Optional fields
-when you use the default settings,this plugin will add versionCode in build.grale only when release.so there are some optional filds to benefit your.
+
+when you use the default settings,this plugin will add versionCode in build.grale only when release.
+
+there are some optional filds to benefit you.
 * 'gradle'(default) --- this will only add versionCode in build.gradle when release.
 * 'manifest'  --- this will only add versionCode in manifest.xml when release.
 * 'all' --- add versionCode in buid.gradle and manifest.xml when release.
