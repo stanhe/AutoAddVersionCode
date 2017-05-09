@@ -2,7 +2,7 @@
 
 ## This a gradle plugin for auto add versionCode when release.
 
-### How to use
+### Usage
 ```java
 apply plugin: 'com.android.application'
 
