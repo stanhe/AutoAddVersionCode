@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/stanhe/AutoAddVersionCode.svg)](https://jitpack.io/#stanhe/AutoAddVersionCode)
 
-#### This a gradle plugin for auto add versionCode when release.
+### This a gradle plugin for auto add versionCode when release.
 
 ### How to use
 ```java
@@ -25,7 +25,7 @@ android {
 ```
 ### Optional fields
 when you use the default settings,this plugin will add versionCode in build.grale only when release.so there are some optional filds to benefit your.
-* 'gradle' or (default no) --- this will only add versionCode in build.gradle when release.
+* 'gradle'(default) --- this will only add versionCode in build.gradle when release.
 * 'manifest'  --- this will only add versionCode in manifest.xml when release.
 * 'all' --- add versionCode in buid.gradle and manifest.xml when release.
 
@@ -55,7 +55,7 @@ android {
 ```
 
 
-### release log
+### Release log
 #### v 1.0.3 
 Refactor Judgment logic .
 fix release can't handle versionCode with productFlavors.
