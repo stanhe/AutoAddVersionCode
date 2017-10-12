@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/stanhe/AutoAddVersionCode.svg)](https://jitpack.io/#stanhe/AutoAddVersionCode)
-
-## This a gradle plugin for auto add versionCode when release.
+[![](https://img.shields.io/badge/plugin-gradle-orange.svg)](http://stanho.top/2017/03/19/gradle_plugin)
+## This is a gradle plugin for auto add versionCode when release.
 
 ### Usage
 ```java
